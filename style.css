@@ -1,97 +1,140 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import './css/colors.css';
+@import './css/variables.css';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+*{
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+body{
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  background: var(--bg-dark-blue);
+}
+/* ------------Header--------------- */
+.header{
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  border-bottom: 1px solid var(--bg-dark-blue);
+}
+.header > picture{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  border-bottom: 1px solid var(--separator);
+}
+.header > picture > img {
+  margin: auto;
+  width: 60px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* ------------Nav--------------- */
+nav{
+  width: 100%;
+  height: 4rem;
+}
+nav > ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+nav > ul > li{
+  font-size: var(--body-text);
+  padding: 3rem 0;
+  font-weight: bold;
+}
+nav > ul > li > a{
+  text-decoration: none;
+  color: var(--white);
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* ------------Intro--------------- */
+.intro-container{
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+.intro-container > picture {
+  position: relative;
+  display: inline-block;
   text-align: center;
 }
+.introImagen{
+  width: 100%;
+  height: 34rem;
+  object-position: 100%;
+  opacity: 1;
+  backdrop-filter: drop-shadow(10px 10px 10px rgb(247, 1, 1));
+}
+.title-intro{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: var(--large);
+  font-weight: bold;
+  color: var(--white);
+  width: 30rem;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.parrafo-intro{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--title);
+  color: var(--white);
+  width: 23rem;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.vidrio-effect{
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 12rem;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.button-intro{
+  text-decoration:none;
+  margin: 3rem auto;
+  background: var(--blue-accent);
+  padding: 1rem 4rem;
+  font-size: var(--title);
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/* ------------Productos--------------- */
+/* --------Perifericos----------- */
+/* main{
+  background: var(--white);
+  padding: 3rem 0;
+} */

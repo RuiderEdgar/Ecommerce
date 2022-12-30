@@ -1,0 +1,18 @@
+.producto-container{
+    padding: 3rem 3rem;
+}
+.producto-container > h3{
+    font-size: var(--title);
+    color: var(--detailText-color);
+}
+.producto-container > h2{
+    font-size: var(--large);
+    margin-bottom: 4rem;
+}
+/* depende de nombre de la clase se intercalara los colores de fondo entre blanco y azul de cada categoria de producto */
+.par{
+    background: var(--bg-blue);
+}
+.non{
+    background: var(--white);
+}
