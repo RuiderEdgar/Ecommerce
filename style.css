@@ -117,8 +117,12 @@ nav > ul > li > a{
 }
 
 .button-intro{
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  min-width: 22rem;
   text-decoration:none;
-  margin: 3rem auto;
+  margin: 2rem auto;
   background: var(--blue-accent);
   padding: 1rem 4rem;
   font-size: var(--title);
@@ -130,11 +134,123 @@ nav > ul > li > a{
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
-/* ------------Productos--------------- */
-/* --------Perifericos----------- */
-/* main{
-  background: var(--white);
-  padding: 3rem 0;
-} */
+
+
+/*------------Responsive------------------*/
+
+@media (min-width: 768px) and (max-width: 992px){
+  
+  /* ------------Intro--------------- */
+  .intro-container{
+    height: 54rem;
+  }
+  .introImagen{
+    height: 40rem;
+  }
+  .title-intro{
+    top: 65%;
+    width: 35rem;
+  }
+  .parrafo-intro{
+    top: 80%;
+    width: 32rem;
+    font-size: var(--subtitle);
+  }
+  .vidrio-effect{
+    top: 75%;
+    width: 35rem;
+    height: 14rem;
+  }
+  .button-intro{
+    font-size: var(--subtitle);
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1199px){
+  /* ------------Intro--------------- */
+  .intro-container{
+    height: fit-content;
+    margin-bottom: -4px;
+  }
+  .introImagen{
+    height: 48rem;
+    
+  }
+  .title-intro{
+    width: 35rem;
+    top: 20%;
+    left: 20%;
+  }
+  .parrafo-intro{
+    top: 36%;
+    left: 20%;
+    text-align: start;
+    translate: 6%;
+    width: 32rem;
+    font-size: var(--subtitle);
+  }
+  .vidrio-effect{
+    top: 30%;
+    left: 20%;
+    width: 35rem;
+    height: 14rem;
+    background: rgba(0, 0, 0, 0.445);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.144);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+  }
+  .button-intro{
+    font-size: var(--subtitle);
+    position: absolute;
+    top: 55%;
+    left: 20%;
+  }
+}
+@media (min-width: 1200px){
+  /* ------------Intro--------------- */
+  .intro-container{
+    height: fit-content;
+    margin-bottom: -4px;
+  }
+  .introImagen{
+    height: 50rem;
+  }
+  .title-intro{
+    width: 35rem;
+    translate: 6%;
+    top: 20%;
+    left: 20%;
+  }
+  .parrafo-intro{
+    top: 36%;
+    left: 20%;
+    width: 40rem;
+    text-align: justify;
+    translate: 15%;
+    font-size: var(--subtitle);
+}
+  .vidrio-effect{
+    top: 29%;
+    left: 20%;
+    width: 44rem;
+    height: 14rem;
+    translate: 13%;
+    background: rgba(0, 0, 0, 0.445);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.144);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+  }
+  .button-intro{
+    font-size: var(--subtitle);
+    position: absolute;
+    top: 65%;
+    left: 20%;
+  }
+}

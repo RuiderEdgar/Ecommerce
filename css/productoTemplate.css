@@ -16,3 +16,46 @@
 .non{
     background: var(--white);
 }
+
+/*------------cards product container------------------*/
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-gap: 1rem 2rem;
+    justify-items: center;
+}
+
+/*------------Responsive------------------*/
+@media (min-width: 993px) and (max-width: 1199px){
+    .producto-container > h3{
+        font-size: var(--subtitle);
+        text-align: center;
+    }
+    .producto-container > h2{
+        text-align: center;
+    }
+
+    /*------cards product container--------*/
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-gap: 1rem 2rem;
+        justify-items: center;
+    }
+}
+@media (min-width: 1200px){
+    .producto-container > h3{
+        font-size: var(--subtitle);
+        text-align: center;
+    }
+    .producto-container > h2{
+        text-align: center;
+    }
+  /*------cards product container--------*/
+  .cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 1rem 2rem;
+    justify-items: center;
+}
+}
