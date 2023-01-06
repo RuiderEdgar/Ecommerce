@@ -14,7 +14,7 @@ export const cardProduct = () => {
                     <h1>$00,0</h1>
                 </div>
                 <picture>
-                    <img src="./icons/cart.png" alt="icono carrito" />
+                    <img class='addCart' src="./icons/cart.png" alt="icono carrito" />
                 </picture>
             </section>
         </article>

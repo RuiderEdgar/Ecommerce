@@ -38,6 +38,7 @@ body{
 nav{
   width: 100%;
   height: 4rem;
+  position: relative;
 }
 nav > ul {
   display: flex;
@@ -56,7 +57,18 @@ nav > ul > li > a{
   text-decoration: none;
   color: var(--white);
 }
-
+#listaCarrito{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 4rem;
+  right: 4rem;
+  border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 /* ------------Intro--------------- */
 .intro-container{
   width: 100%;
@@ -172,6 +184,9 @@ nav > ul > li > a{
 
 @media (min-width: 768px) and (max-width: 992px){
   
+  #listaCarrito{
+    right: 9rem;
+  }
   /* ------------Intro--------------- */
   .intro-container{
     height: 54rem;
@@ -199,6 +214,9 @@ nav > ul > li > a{
 }
 
 @media (min-width: 993px) and (max-width: 1199px){
+  #listaCarrito{
+    right: 12rem;
+  }
   /* ------------Intro--------------- */
   .intro-container{
     height: fit-content;
@@ -239,6 +257,9 @@ nav > ul > li > a{
   }
 }
 @media (min-width: 1200px){
+  #listaCarrito{
+    right: 15rem;
+  }
   /* ------------Intro--------------- */
   .intro-container{
     height: fit-content;

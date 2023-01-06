@@ -29,7 +29,7 @@ export const modal = () => {
                         Comprar
                     </span>
                 </button>
-                <button class='btn-add'>
+                <button class='btn-add addCartModal'>
                     <img src="./icons/cart.png" alt="icono carrito" />
                     <span>
                         Carrito

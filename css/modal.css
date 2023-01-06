@@ -41,6 +41,7 @@
     right: 0.5rem;
     background: transparent;
     border-style: none;
+    cursor: pointer;
 }
 .btn-close-modal > img {
     width: 2.5rem;
@@ -68,6 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
     width: 11.1rem;
     height: 3.8rem;
     font-size: var(--details);
