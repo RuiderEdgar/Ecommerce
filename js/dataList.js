@@ -20,4 +20,8 @@ export const deleteProduct = () => {
     listaProductos.pop();
     localStorage.setItem('listaProductos', JSON.stringify(listaProductos));
 }
+export const limpiar = () => {
+    listaProductos = [];
+    localStorage.setItem('listaProductos', JSON.stringify(listaProductos));
+}
 

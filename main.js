@@ -1,8 +1,9 @@
 import './style.css'
+import './css/thankYouPage.css'
 import './js/dataList.js'
 import { productoTemplate } from './templates/producto';
 import { modal } from './templates/modal';
-import { addProduct, deleteProduct } from './js/dataList.js';
+import { addProduct, deleteProduct, limpiar } from './js/dataList.js';
 import { listaCarrito } from './templates/listaCarrito';
 
 //datos
@@ -72,6 +73,12 @@ const actualizarLista = () => {
             actualizarLista();
         })
     })
+    document.querySelector('.btn-buy-cart').addEventListener('click', () => {
+        limpiar();
+        window.location.assign('./router/thankYou.html')
+        //funcion recursiva
+        actualizarLista();
+    })
 }
 // Añadiendo de nuevo los addEventListener cuando se recarge la pagina y no pierda los eventos
 window.addEventListener('load', () => {
@@ -98,4 +105,3 @@ document.querySelectorAll('.addCart').forEach(iconCart => {
         actualizarLista();
     })
 })
-

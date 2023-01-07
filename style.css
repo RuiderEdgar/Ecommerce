@@ -200,6 +200,32 @@ nav > ul > li > a:hover{
   background-color: rgba(0,0,0,0.4);
 }
 
+/*------------Footer------------------*/
+.footer{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 7rem;
+}
+.footer > * {
+  height: 100%;
+}
+.footer > div {
+  display: flex;
+}
+.footer > picture {
+  margin-right: 1rem;
+  display: flex;
+}
+.footer > div > h1 {
+  color: var(--white);
+  margin: auto;
+  font-weight: bold;
+  font-size: var(--header);
+}
+.footer > picture > img {
+  margin: auto;
+}
 
 /*------------Responsive------------------*/
 
@@ -231,6 +257,9 @@ nav > ul > li > a:hover{
   }
   .button-intro{
     font-size: var(--subtitle);
+  }
+  .footer{
+    height: 8rem;
   }
 }
 
@@ -279,6 +308,9 @@ nav > ul > li > a:hover{
   .button-intro:hover{
     top: 57%;
   }
+  .footer{
+    height: 9rem;
+  }
 }
 @media (min-width: 1200px){
   #listaCarrito{
@@ -325,5 +357,8 @@ nav > ul > li > a:hover{
   }
   .button-intro:hover{
     top: 67%;
+  }
+  .footer{
+    height: 10rem;
   }
 }

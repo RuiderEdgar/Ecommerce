@@ -1,5 +1,5 @@
 import '../css/modal.css'
-export const modal = () => {
+export const modal = (btnBuy) => {
     return (`
     <article class='modal-content'>
         <picture>
@@ -23,7 +23,7 @@ export const modal = () => {
                 </ul>
             </main>
             <footer>
-                <button class='btn-buy'>
+                <button class='btn-buy' onclick="window.location.assign('./router/thankYou.html')">
                     <img src="./icons/bolsa.png" alt="icono bolsa" />
                     <span>
                         Comprar

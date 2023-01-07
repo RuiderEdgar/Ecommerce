@@ -51,11 +51,11 @@
     .producto-container > h2{
         text-align: center;
     }
-  /*------cards product container--------*/
-  .cards-container{
+    /*------cards product container--------*/
+    .cards-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 1rem 2rem;
     justify-items: center;
-}
+    }
 }
