@@ -42,6 +42,9 @@
     background: transparent;
     border-style: none;
     cursor: pointer;
+    transition: all;
+    transition-duration: 200ms;
+    transition-delay: 130ms;
 }
 .btn-close-modal > img {
     width: 2.5rem;
@@ -88,11 +91,42 @@
     border-style: none;
     color: var(--white);
     font-weight: bold;
+    transition: all;
+    transition-duration: 200ms;
+    transition-delay: 130ms;
 }
 .btn-add{
     border: 1px solid var(--blue-accent);
     color: var(--blue-accent);
     font-weight: bold;
+    transition: all;
+    transition-duration: 200ms;
+    transition-delay: 130ms;
+}
+.btn-buy:hover{
+    transform: scale(1.1) translateY(-10%);
+    -webkit-transform: scale(1.1) translateY(-10%);
+    -moz-transform: scale(1.1) translateY(-10%);
+    -ms-transform: scale(1.1) translateY(-10%);
+    -o-transform: scale(1.1) translateY(-10%);
+    background: var(--blue-accent-dark);
+}
+.btn-add:hover{
+    background: var(--blue-accent);
+    color: var(--white);
+    font-weight: bold;
+    transform: scale(1.1) translateY(-10%);
+    -webkit-transform: scale(1.1) translateY(-10%);
+    -moz-transform: scale(1.1) translateY(-10%);
+    -ms-transform: scale(1.1) translateY(-10%);
+    -o-transform: scale(1.1) translateY(-10%);
+}
+.btn-close-modal:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 /*------------Responsive------------------*/

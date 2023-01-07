@@ -39,6 +39,16 @@ document.querySelector('.btn-close-modal').addEventListener('click', () => {
 //-----------ventana de la lista del carrito-------
 //abrir ventana
 document.querySelector('#carrito-nav').addEventListener('click', () => {
+
+    let carritoDOM = document.querySelector('#carrito-nav');
+    if (carritoDOM.style.color === 'var(--white)') {
+        carritoDOM.style.color = 'var(--blue-accent-dark)'
+    } else if (carritoDOM.style.color === 'var(--blue-accent-dark)') {
+        carritoDOM.style.color = 'var(--white)'
+    } else {
+        carritoDOM.style.color = 'var(--blue-accent-dark)'
+    }
+
     let ventana = document.querySelector('#listaCarrito');
     if (ventana.style.display === 'none') {
         ventana.style.display = 'block';

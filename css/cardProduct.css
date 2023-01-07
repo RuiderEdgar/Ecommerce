@@ -46,6 +46,9 @@
     -moz-border-radius: 5px 0 0 5px;
     -ms-border-radius: 5px 0 0 5px;
     -o-border-radius: 5px 0 0 5px;
+    transition: all;
+    transition-duration: 100ms;
+    transition-delay: 100ms;
 }
 .container-header > h2{
     margin: auto;
@@ -71,6 +74,23 @@
     margin: auto;
     width: 4.8rem;
     cursor: pointer;
+    transition: all;
+    transition-duration: 200ms;
+    transition-delay: 130ms;
+}
+.container-imgProduct > img:hover {
+    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+    -moz-transform: translateX(-5%);
+    -ms-transform: translateX(-5%);
+    -o-transform: translateX(-5%);
+}
+.container-info > picture > img:hover {
+    transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
 }
 /*------------Responsive------------------*/
 
@@ -114,6 +134,13 @@
         -ms-border-radius: 5px 5px 0 0;
         -o-border-radius: 5px 5px 0 0;
     }
+    .container-imgProduct > img:hover {
+        transform: translateY(-5%);
+        -webkit-transform: translateY(-5%);
+        -moz-transform: translateY(-5%);
+        -ms-transform: translateY(-5%);
+        -o-transform: translateY(-5%);
+    }
 }
 @media (min-width: 1200px){
     .card-product{
@@ -154,5 +181,12 @@
         -moz-border-radius: 5px 5px 0 0;
         -ms-border-radius: 5px 5px 0 0;
         -o-border-radius: 5px 5px 0 0;
+    }
+    .container-imgProduct > img:hover {
+        transform: translateY(-5%);
+        -webkit-transform: translateY(-5%);
+        -moz-transform: translateY(-5%);
+        -ms-transform: translateY(-5%);
+        -o-transform: translateY(-5%);
     }
 }

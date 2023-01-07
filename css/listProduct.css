@@ -57,13 +57,35 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: all;
+    transition-duration: 150ms;
+    transition-delay: 100ms;
 }
 .btn-buy-cart > img{
     position: absolute;
     left: 4rem;
     width: 2rem;
     margin-right: 1rem;
+    transition: all;
+    transition-duration: 200ms;
+    transition-delay: 130ms;
 }
+.productInCart > .borrar > img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.btn-buy-cart:hover{
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    -o-transform: translateY(-10%);
+}
+
+/* ----------Responsive------------- */
 @media (min-width: 768px) and (max-width: 992px){
     .productInCart > .imagenProducto{
         width: 4.76rem;
